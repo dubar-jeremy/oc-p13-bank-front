@@ -3,6 +3,7 @@ import {useSignInMutation} from "../../redux/queries/authenticationApi.ts";
 import {useDispatch} from "react-redux";
 import {setIsAuthenticated, setToken} from "../../redux/slices/authentication/authenticationSlice.ts";
 import {useNavigate} from "react-router-dom";
+import '../../index.css'
 
 /**|
  * In a production-mode application, the form and its validation should be built with external libraries (such as react-hook-form/yup).

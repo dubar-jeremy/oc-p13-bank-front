@@ -1,12 +1,15 @@
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";
-import {Outlet} from "react-router-dom";
+import {Outlet, useLocation} from "react-router-dom";
 
 const Layout = () => {
+
+    const location = useLocation()
+
     return (
         <>
             <Header/>
-            <main>
+            <main className={`bg-dark ${location.pathname !== '/' && 'bg-dark-p'}`}>
                 <Outlet />
             </main>
             <Footer/>

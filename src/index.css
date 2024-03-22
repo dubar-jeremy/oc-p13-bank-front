@@ -29,6 +29,10 @@ span.main-nav-item:hover {
   background-color: #12002b;
 }
 
+.bg-dark-p {
+  padding: 3rem;
+}
+
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -79,7 +83,7 @@ span.main-nav-item:hover {
 }
 
 .hero {
-  background-image: url('../img/bank-tree.jpeg');
+  background-image: url('assets/img/bank-tree.jpeg');
   background-position: 0 -50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,7 +135,17 @@ span.main-nav-item:hover {
   }
 }
 
+main {
+  flex: 1
+}
+
+.header > h1 {
+  color: white;
+  padding: 1em;
+}
+
 .features {
+  background: white;
   display: flex;
   flex-direction: column;
 }
